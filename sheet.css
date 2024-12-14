@@ -170,9 +170,9 @@ p {
 form {
     background-color:transparent;
     color:  #ff6347;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #ff6347;
 }
 
 .form-group {
@@ -190,7 +190,7 @@ input, select, textarea {
     width: 100%;
     padding: 10px;
     font-size: 1em;
-    border: 1px solid transparent;
+    border: 1px solid #ff6347;
     border-radius: 5px;
 }
 
