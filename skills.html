@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Gurinder Singh Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Gurinder singh</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="skills.html">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="skills.html">Skills</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="skills-section">
+        <div class="skills-container">
+            <h1 class="section-title" data-aos="flip-up" data-aos-duration="700" data-aos-delay="700">My Skills</h1>
+            
+            <!-- Skills -->
+            <div class="skills-category"data-aos="flip-down" data-aos-duration="900" data-aos-delay="700">
+                <h2>Proficient in Programming languages including</h2>
+                <div class="skills">
+                    <div class="skill-item"data-aos="fade-right" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="html.png" >
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item"data-aos="fade-right" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="css.png" >
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item"data-aos="fade-left" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="c.png" >
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item"data-aos="fade-left" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="c++.png" >
+                        <p>C++</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills -->
+            <div class="skills-category"data-aos="flip-down" data-aos-duration="900" data-aos-delay="700">
+                <h2>Proficient in designing apps</h2>
+                <div class="skills">
+                    <div class="skill-item"data-aos="fade-right" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="g.png" >
+                        <p>ADOBE EXPRESS</p>
+                    </div>
+                    <div class="skill-item"data-aos="fade-right" data-aos-duration="900" data-aos-delay="700">
+                        <i class="image"></i>
+                        <img src="photoshop.png" >
+                        <p>ADOBE PHOTOSHOP</p>
+                    </div>
+              
+                </div>
+            </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
